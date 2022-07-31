@@ -1,0 +1,13 @@
+@mixin content_center($flex_val) {
+    display: flex;
+    justify-content: center;
+    align-items: $flex_val;
+    flex-direction: column;
+}
+
+@mixin main_text($f_size, $line_height, $f_weight) {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: $f_size;
+    line-height: $line_height;
+    font-weight: $f_weight;
+}

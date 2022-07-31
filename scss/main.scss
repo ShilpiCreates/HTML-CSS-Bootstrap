@@ -1,0 +1,314 @@
+@import '../scss/var';
+@import '../scss/mixin';
+@import '../scss/vendor';
+
+html{font-size: 62.5%;}
+body{
+    @include main_text(1.4rem, 2rem, 400);
+    color: $text-color;
+}
+a, a:hover{
+    text-decoration: none;
+}
+header{
+    width: 100vw;
+    height: 11.5rem;
+    position: fixed;
+    top: 0%;
+    z-index: 9999;
+    background-color: $white-color;
+    border-bottom: 0.1rem solid #707070;
+    .banner{
+        height: 4.783rem
+    }
+    .navbar-nav li a{
+        @include main_text(1.6rem, 2.2rem, 600);
+        color: $text-color;
+    }
+    .navbar-toggler{
+        background-color: $bg-color;
+        border: 1px solid $main-color;
+        span   {
+            color: $main-color;
+        }
+    }
+}
+.btn_blue{
+    background: $main-color 0% 0% no-repeat padding-box;
+    box-shadow: 0px 16px 48px #00000029;
+    border-radius: 3.3rem;
+    opacity: 1;
+    border: 0;
+    color: $white-color;    
+    @include main_text(1.8rem, 1.8rem, 600);
+    letter-spacing: 0px;
+    padding: 1.2rem  3.2rem;
+    margin-top: 3.2rem;
+}
+.main-banner{
+    height: 100vh;
+    width: 100%;
+    padding-top: 11.5rem;
+    overflow: hidden;
+    &__text{
+        height: 80vh;
+        width: 100%;
+        @include content_center(flex-start);
+        h1{
+            @include main_text(3rem, 4.5rem, 900); 
+        }
+        p{
+            padding-top: 2rem;
+        }
+    }
+    &__img{
+        height: 80vh;
+        width: 100%;
+        @include content_center(flex-end);
+        img{
+            height: 80vh;
+        }
+    }
+    .z_index1{
+        z-index: 1;
+    }
+    .z_index3{
+        z-index: 3;
+    }
+    .row>*{
+        padding: 0%;
+    }
+    .wave_bg{
+        position: absolute;
+        bottom: 0%;
+        left: 0;
+        overflow: hidden;
+        width: 100vw;
+        z-index: 2;
+        svg{
+            width: 130%;
+            position: relative;
+            right: 30%;
+        }
+    }
+}
+.page-2{
+    background-color: $bg-color;
+    min-height: 80vh;
+    h2{
+        @include main_text(2rem, 4.5rem, 900); 
+        text-align: center;
+    }
+    .textBox_3{        
+        background-color: $white-color;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 1.8rem;
+        padding: 2.8rem 1.9rem 1.9rem;
+        opacity: 1;
+        h6{
+            @include main_text(1.4rem, 2.5rem, 900); 
+            text-align: center;
+        }
+    }
+}
+.page-3{
+    min-height: 80vh;
+    background-color: $white-color;
+    position: relative;
+    .wave_bg{
+        transform: rotate(180deg);
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        width: 100vw;
+        z-index: 1;
+    }
+    .container{
+        z-index: 2;
+        position: relative;
+    }
+    h2{
+        @include main_text(2rem, 4.5rem, 900); 
+        text-align: center;
+    }
+    .textBox_3{        
+        border-radius: 1.8rem;
+        padding: 1.8rem 0%;
+        opacity: 1;
+        h6{
+            @include main_text(1.4rem, 2.5rem, 900); 
+            margin-top: 2rem;
+        }
+    }
+}
+
+.page-4{
+    min-height: 80vh;
+    background-color: $white-color;
+    @include content_center(flex-start);
+    h2{
+        @include main_text(2rem, 4.5rem, 900); 
+        text-align: center;
+    }
+    h3{        
+        @include main_text(1.6rem, 2rem, 900); 
+    }
+    .tit_img{
+        @include content_center(flex-start);
+        h3{margin-bottom: 0%;}
+    }
+    .col-2{
+        img{
+            max-width: 6rem;
+            height: 100%;
+        }
+    }
+    .btn_blue{
+        margin-top: 0%;
+    }
+}
+
+.page-5{
+    height: 100vh;
+    background-color: $white-color;
+    h2{
+        @include main_text(2rem, 4.5rem, 900); 
+        text-align: center;
+    }
+    h4{
+        @include main_text(1.6rem, 2rem, 900); 
+    }
+    .employ-intro{
+        position: relative;
+        height: 30rem;
+        background-color: $bg-color;
+        box-shadow: 0px 1.6rem 4.8rem #00000029;
+        border-radius: 4.2rem;
+        .pb_5{
+            padding-bottom: 10rem !important;
+        }
+        img{max-width: 6rem;}
+    }
+    .col-1{
+        img{max-width: 6rem;}
+    }
+    .col-11{
+    @include content_center(flex-start);
+    }
+    .carousel{
+        width: 100%;
+        margin: 0 auto;
+        .row{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .carousel-inner{
+            padding-bottom: 10rem;
+        }
+    }
+    .card{
+        background: $white-color;
+        box-shadow: 0px 1.6rem 4.8rem #00000029;
+        border-radius: 3rem;
+        border: 0px transparent;
+        margin: 2rem 0.8rem;
+        padding: 3rem 1rem;
+        img{
+            width: 4rem;
+        }
+        .emp_name{
+            padding-left: 1.8rem;
+            h6{
+                @include main_text(1.3rem, 1.8rem, 600); 
+                span{
+                    color: #ffb549;
+                    float: right;
+                }
+            }
+            p{
+                @include main_text(1.3rem, 1.8rem, 400); 
+                color: $gray-color;
+            }
+        }
+        p{
+            @include main_text(1.3rem, 1.8rem, 400); 
+        }
+    }
+    .btn-primary{
+        background-color: $white-color;
+        opacity: 1 !important;
+        width: 5rem; height: 5rem;
+        border-radius: 5rem;
+        box-shadow: 0px 7px 17px #00000029;
+        border-color: transparent !important;
+        color: $gray-color;
+        position: absolute;
+        top: 60%;
+        z-index: 6;
+        line-height: 4rem;        
+    }
+    .btn-prev {
+        left: -25px;
+    }
+    .btn-next {
+        right: -25px;
+    }
+}
+
+.page-6{
+    height: 60vh;
+    background-color: $white-color;
+    text-align: center;
+    h2{
+        @include main_text(2rem, 4.5rem, 900); 
+    }
+}
+
+footer{
+    height: 20rem;
+    background-color: $text-color;
+    color: $white-color;
+    text-align: center;
+    padding-top: 16rem;
+    line-height: 2rem;
+    span{padding-left: 1.5rem;}
+}
+
+// X-Small devices (portrait phones, less than 576px)
+//@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+    .col-md-4{
+        &:nth-child(2){
+            display: none;
+        }
+        &:nth-child(3){
+            display: none;
+        }
+    }
+ }
+
+ 
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+    .navbar-nav{
+        background-color: $bg-color;
+        border: 0.1rem solid rgba(0,0,0,.1);
+    }
+    .main-banner__img{display: none;}
+    .textBox_3{
+        text-align: center;
+    }
+    .page-6{
+        height: auto;
+    }
+ }
+
+
+
+
+
+
+
+
