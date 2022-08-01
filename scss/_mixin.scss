@@ -1,13 +1,21 @@
-@mixin content_center($flex_val) {
-    display: flex;
-    justify-content: center;
-    align-items: $flex_val;
-    flex-direction: column;
+@mixin main-font($font-size, $line-height, $font-weight) {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
 }
 
-@mixin main_text($f_size, $line_height, $f_weight) {
+@mixin content_center($flex-val) {
+    display:flex;
+    justify-content: center;
+    align-items:$flex-val;
+    flex-direction: column;
+}
+@mixin first-tit {
+    text-align: center;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: $f_size;
-    line-height: $line_height;
-    font-weight: $f_weight;
+    font-size: 2.5rem;
+    line-height: 3.8rem;
+    font-weight: 600;
+    
 }
